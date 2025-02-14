@@ -15,7 +15,6 @@ let transactions =
         ? localStorageTransactions
         : [];
 
-// Add Transactions
 function addTransaction(e) {
     e.preventDefault();
 
@@ -41,13 +40,10 @@ function addTransaction(e) {
     }
 }
 
-// Add Transactions To The DOM List
 function addTransactionToDOM(transaction) {
-    // Get the sign plus or minus
     const sign = transaction.amount < 0 ? "-" : "+";
     const item = document.createElement("li");
 
-    // Add classes based on the value
     item.classList.add(transaction.amount < 0 ? "minus" : "plus");
     item.innerHTML = `
         ${transaction.text} <span>${sign}${Math.abs(
@@ -59,7 +55,6 @@ function addTransactionToDOM(transaction) {
     list.appendChild(item);
 }
 
-// Update the balance, income and expenses
 function updateValues() {
     const amounts = transactions.map((transaction) => transaction.amount);
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
@@ -78,7 +73,6 @@ function updateValues() {
     money_minus.innerText = `-$${expense}`;
 }
 
-// Delete The Transactions by ID
 function removeTransaction(id) {
     transactions = transactions.filter((transaction) => transaction.id !== id);
 
@@ -87,12 +81,10 @@ function removeTransaction(id) {
     init();
 }
 
-// Update The Local Storage
 function updateLocalStoarge() {
     localStorage.setItem("transactions", JSON.stringify(transactions));
 }
 
-// Initialize the App
 function init() {
     list.innerHTML = "";
 
@@ -102,7 +94,6 @@ function init() {
 
 init();
 
-// Generate a Random ID
 function generateId() {
     return Math.floor(Math.random() * 100000000);
 }
