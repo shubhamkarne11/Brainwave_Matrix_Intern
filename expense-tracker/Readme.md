@@ -14,17 +14,6 @@ MoneyMate is a simple yet effective expense tracker designed to help users manag
 - CSS
 - JavaScript
 
-## 📥 Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/MoneyMate.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd MoneyMate
-   ```
-3. Open `index.html` in your browser to use the app.
-
 ## 📸 Output
 ![image](https://github.com/user-attachments/assets/08fe79ad-1c09-4f6f-af53-03455106c6d5)
 
