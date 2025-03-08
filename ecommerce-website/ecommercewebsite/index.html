@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub | Ultimate Shopping Experience</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">FashionHub</a>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-item">Home</a>
+                <a href="#men" class="nav-item">Men</a>
+                <a href="#women" class="nav-item">Women</a>
+                <a href="#kids" class="nav-item">Kids</a>
+                <a href="#accessories" class="nav-item">Accessories</a>
+                <a href="#deals" class="nav-item">Deals</a>
+                <a href="#trending" class="nav-item">Trending</a>
+                <a href="#clearance" class="nav-item">Clearance</a>
+            </nav>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search products..." id="searchInput">
+            </div>
+            <div class="user-actions">
+                <a href="#" class="wishlist-icon" id="wishlistToggle">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-badge" id="wishlistCount">0</span>
+                </a>
+                <a href="#" class="cart-icon" id="cartToggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartCount">0</span>
+                </a>
+                <a href="#" class="user-icon"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <section class="slider" id="home">
+        <div class="slides">
+            <img src="img/img1.png" alt="Slide 1" class="slide">
+            <img src="img/img2.png" alt="Slide 2" class="slide">
+            <img src="img/img3.png" alt="Slide 3" class="slide">
+            <img src="img/img4.png" alt="Slide 4" class="slide">
+        </div>
+        <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+        <div class="promo-content">
+            <h2>Season Sale - Up to 70% Off!</h2>
+            <p>Shop now and get exclusive discounts on all categories</p>
+            <button class="promo-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="men">
+            <h2 class="section-title">Men's Collection</h2>
+            <div class="products-grid" id="menGrid"></div>
+        </section>
+
+        <section id="women">
+            <h2 class="section-title">Women's Collection</h2>
+            <div class="products-grid" id="womenGrid"></div>
+        </section>
+
+        <section id="kids">
+            <h2 class="section-title">Kids' Collection</h2>
+            <div class="products-grid" id="kidsGrid"></div>
+        </section>
+
+        <section id="accessories">
+            <h2 class="section-title">Accessories</h2>
+            <div class="products-grid" id="accessoriesGrid"></div>
+        </section>
+
+        <section id="deals">
+            <h2 class="section-title">Hot Deals</h2>
+            <div class="products-grid" id="dealsGrid"></div>
+        </section>
+
+        <section id="trending">
+            <h2 class="section-title">Trending Now</h2>
+            <div class="products-grid" id="trendingGrid"></div>
+        </section>
+
+        <section id="clearance">
+            <h2 class="section-title">Clearance Sale</h2>
+            <div class="products-grid" id="clearanceGrid"></div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <h2 class="section-title">Explore Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="img/img1.png" alt="Men">
+                    <h3>Men's Fashion</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/img2.png" alt="Women">
+                    <h3>Women's Fashion</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/img3.png" alt="Kids">
+                    <h3>Kids' Fashion</h3>
+                </div>
+                <div class="category-card">
+                    <img src="img/img4.png" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <span class="close-modal" id="closeCartModal">×</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cartTotal">0</span></h3>
+                <button class="add-to-cart" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="wishlist-modal" id="wishlistModal">
+        <div class="wishlist-content">
+            <span class="close-modal" id="closeWishlistModal">×</span>
+            <h2>Your Wishlist</h2>
+            <div class="wishlist-items" id="wishlistItems"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Shop</h3>
+                <p>Men's Clothing</p>
+                <p>Women's Clothing</p>
+                <p>Kids' Clothing</p>
+                <p>Accessories</p>
+                <p>Footwear</p>
+                <p>New Arrivals</p>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <p>Contact Us</p>
+                <p>Shipping Info</p>
+                <p>Return Policy</p>
+                <p>Size Guide</p>
+                <p>FAQ</p>
+                <p>Track Order</p>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Our Story</p>
+                <p>Sustainability</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <p>Email: support@fashionhub.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>123 Fashion Street</p>
+                <p>New York, NY 10001</p>
+                <p>Social: @FashionHub</p>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe for exclusive offers</p>
+                <input type="email" placeholder="Enter your email" class="newsletter-input">
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 FashionHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

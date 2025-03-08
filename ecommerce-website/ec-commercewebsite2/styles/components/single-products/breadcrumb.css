@@ -1,0 +1,26 @@
+.product-details .path ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-details .path ul li {
+    font-size: 14px; /* Slightly larger for readability */
+    color: #6b7280; /* Gray for non-active links */
+}
+
+.product-details .path ul li:not(:last-child)::after {
+    content: ">";
+    margin: 0 8px;
+    color: #d1d5db; /* Lighter gray for separators */
+}
+
+.product-details .path ul li a {
+    color: #1e3a8a; /* TrendZone deep blue for links */
+    transition: color 0.3s ease;
+}
+
+.product-details .path ul li a:hover {
+    color: #93c5fd; /* Light blue on hover */
+    text-decoration: none; /* Remove underline, keep clean */
+}

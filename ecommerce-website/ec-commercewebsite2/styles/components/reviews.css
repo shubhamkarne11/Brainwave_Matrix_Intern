@@ -1,0 +1,125 @@
+/* ! comment item start */
+.tab-feedback .review {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.tab-feedback .review .review-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tab-feedback .review .review-meta {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.tab-feedback .review .review-text {
+    font-size: 15px;
+    color: #4b5563;
+}
+
+.tab-feedback .review .review-rating {
+    display: flex;
+    gap: 2px;
+}
+
+.tab-feedback .review .review-rating i {
+    color: #facc15; /* Modern gold */
+    font-size: 14px;
+}
+
+.tab-feedback .review .review-avatar img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.tab-feedback .review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* ! comment item end */
+
+/* ! comment form start */
+.tab-feedback span.required {
+    color: #dc2626; /* Red for required fields */
+}
+
+.tab-feedback .review-form h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+    color: #1e3a8a;
+}
+
+.tab-feedback .form-notes {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.tab-feedback .form-rating {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.tab-feedback .form-rating .rating-stars {
+    display: flex;
+    gap: 5px;
+}
+
+.tab-feedback .form-rating .star {
+    display: flex;
+    align-items: center;
+}
+
+.tab-feedback .form-rating .rating-stars i {
+    font-size: 14px;
+    color: #d1d5db;
+    transition: color 0.3s ease;
+}
+
+.tab-feedback .form-rating .star:not(:last-child)::after {
+    content: " | ";
+    padding: 0 10px;
+    font-size: 14px;
+    color: #d1d5db;
+}
+
+.tab-feedback .form-rating .star.active i {
+    color: #facc15;
+}
+
+.tab-feedback .form-rating .rating-stars a:hover i {
+    color: #facc15;
+}
+
+.feedback-form .form-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.feedback-form .form-comment:not(:first-child) {
+    margin-top: 15px;
+}
+
+.feedback-form .form-privacy {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 14px;
+    gap: 6px;
+    color: #4b5563;
+}
+
+/* ! comment form end */

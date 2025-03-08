@@ -1,0 +1,33 @@
+.categories .category-item {
+    background-color: #f9fafb; /* Lighter background */
+    flex: 1;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; /* Ensure image fits */
+    transition: transform 0.3s ease;
+}
+
+.categories .category-item a {
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e3a8a; /* Deep blue */
+}
+
+.categories .category-item .category-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.categories .category-item:hover {
+    transform: scale(1.05); /* Subtle scale on hover */
+}
+
+.categories .category-item .category-image:hover {
+    transform: scale(1.1); /* Slightly larger zoom */
+}

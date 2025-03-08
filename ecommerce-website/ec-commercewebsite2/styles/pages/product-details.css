@@ -1,0 +1,13 @@
+.product-topbar {
+    margin-top: 40px;
+}
+
+.product-details {
+    margin: 40px 0;
+}
+
+.product-details .main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}

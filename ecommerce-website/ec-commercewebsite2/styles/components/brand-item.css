@@ -1,0 +1,37 @@
+.brands {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.brands .brand-list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e5e7eb; /* Lighter border */
+    flex-wrap: wrap;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure border-radius applies */
+}
+
+.brand-list .brand-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+.brand-list .brand-item img {
+    opacity: 0.5;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.brand-list .brand-item:hover img {
+    transform: scale(1.15); /* Slightly larger zoom */
+    opacity: 1;
+}
+
+.brand-list .brand-item:hover {
+    background-color: #f9fafb; /* Light background on hover */
+}

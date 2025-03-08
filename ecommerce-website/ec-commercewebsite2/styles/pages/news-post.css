@@ -1,0 +1,73 @@
+.news-post {
+    margin-top: 50px;
+}
+
+.news-post figure img {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.news-post .post-content .post-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: #6b7280;
+    margin: 25px 0;
+}
+
+.news-post .post-content .post-date {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.news-post .post-content .post-date::before,
+.news-post .post-content .post-date::after {
+    content: "";
+    height: 1px;
+    width: 12px;
+    background-color: #1e3a8a; /* Deep blue for accents */
+}
+
+.news-post .post-content .post-tags a {
+    font-weight: 600;
+    color: #1e3a8a;
+    transition: color 0.3s ease;
+}
+
+.news-post .post-content .post-tags a:hover {
+    color: #93c5fd;
+}
+
+.news-post .post-content .post-body p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+.news-post .post-content .post-body blockquote {
+    border-left: 4px solid #1e3a8a; /* Deep blue border */
+    background-color: #f9fafb;
+    margin: 25px 0;
+    padding: 25px 35px 15px 50px;
+    border-radius: 5px;
+}
+
+.news-post .post-content .post-body blockquote p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: #6b7280;
+}
+
+.news-post .post-content .post-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.news-post article {
+    margin-bottom: 40px;
+}

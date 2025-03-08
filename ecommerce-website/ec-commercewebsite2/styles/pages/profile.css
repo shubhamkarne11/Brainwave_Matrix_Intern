@@ -1,0 +1,79 @@
+.profile-page {
+    margin: 80px 0; /* Increased for better spacing */
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* More breathing room */
+}
+
+.profile-column {
+    flex: 1;
+}
+
+.profile-column h2 {
+    font-size: 24px; /* Larger for better hierarchy */
+    font-weight: 600;
+    color: #1e3a8a; /* Deep blue for headings */
+    margin-bottom: 15px;
+}
+
+.profile-column form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More spacing between form elements */
+    margin-top: 15px;
+}
+
+.profile-column form div label {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #4b5563; /* Dark gray for labels */
+    gap: 8px; /* Adjusted spacing */
+}
+
+.profile-column form .required {
+    color: #dc2626; /* Red for required fields */
+    font-weight: bold;
+}
+
+.profile-column form .remember {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 13px;
+    color: #6b7280; /* Gray for secondary text */
+}
+
+.profile-column form .remember label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-column form .remember button {
+    background-color: #1e3a8a; /* Deep blue for buttons */
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.profile-column form .remember button:hover {
+    background-color: #93c5fd;
+    color: #1e3a8a;
+}
+
+.profile-column form .form-link {
+    color: #1e3a8a; /* Deep blue for links */
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.profile-column form .form-link:hover {
+    color: #93c5fd; /* Light blue on hover */
+}
